@@ -7,7 +7,7 @@ An easy to use DMA library to control up to 16 channels of ws2812 based lights. 
   
   
 `StartLights(NUM LIGHTS);`  
-NUM Lights is the maximum number of lights on any single channel.
+NUM Lights is the maximum number of lights on any single channel. Important for example if you have 8 lights on channel 0 and 16 lights on channel 1 then NUM LIGHTS must be 16.
 
 `void SetColor(uint8_t port_num, uint16_t led_num, uint8_t r, uint8_t g, uint8_t b)`  
 Sets the color of a given light on port_num
