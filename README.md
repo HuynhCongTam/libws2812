@@ -25,5 +25,5 @@ Like Add Color but subtracts instead.
 Sets all lights to 0, 0, 0
 
 `void Start()`  
-Outputs the current values to the lights. This first checks if there is currently an update happening if there is it waits until it completes then starts the next one. Since the shifting of data to the lights is handled by DMA the function will return immediatly. Inspection of the update_pending variable can be used to determine the current state of the DMA function.
+Outputs the current values to the lights. This first checks if there is currently an update happening if there is it waits until it completes(which will block so be careful) then starts the next one. Since the shifting of data to the lights is handled by DMA the function will return immediatly otherwise. Inspection of the update_pending variable can be used to determine the current state of the DMA function.
 
